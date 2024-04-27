@@ -10,7 +10,7 @@ function App() {
       code
     };
     try{
-      const {data}=await axios.post("http://myapp-env-1.eba-z9zuveau.ap-south-1.elasticbeanstalk.com/run",payload)
+      const {data}=await axios.post("https://6xsnuinz0h.execute-api.ap-south-1.amazonaws.com/default/CodeEditor/run",payload)
       setOutput(data.output);
     }
     catch(err)
