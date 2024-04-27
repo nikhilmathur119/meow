@@ -1,23 +1,28 @@
 import axios from'axios';
 import './App.css';
 import React, {useState} from 'react';
+const axios = require('axios');
+
+// Replace with your API Gateway endpoint URL
+const API_ENDPOINT = 'https://<your-api-gateway-endpoint>/run';
+
 function App() {
-  const [code,setCode]=useState('');
-  const [output,setOutput]=useState("");
-  const handleSubmit =async()=>{
-    const payload={
-      language:"cpp",
-      code
+  const [code, setCode] = useState('');
+  const [output, setOutput] = useState('');
+
+  const handleSubmit = async () => {
+    const payload = {
+      language: "cpp",
+      code,
     };
-    try{
-      const {data}=await axios.post("https://6xsnuinz0h.execute-api.ap-south-1.amazonaws.com/default/CodeEditor",payload)
+    try {
+      const { data } = await axios.post(API_ENDPOINT, payload);
       setOutput(data.output);
+    } catch (err) {
+      console.error(err.response);
+      setOutput('Error occurred. Check browser console for details.');
     }
-    catch(err)
-    {
-      console.log(err.response);
-    }
-  }
+  };
   return (
     <div className="App">
      <h1>C++ CODE COMPILER:</h1>
