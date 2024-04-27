@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/meow/static/css/main.f855e6bc.css",
+    "main.js": "/meow/static/js/main.fb4d5882.js",
+    "static/js/453.833c1f9b.chunk.js": "/meow/static/js/453.833c1f9b.chunk.js",
+    "index.html": "/meow/index.html",
+    "main.f855e6bc.css.map": "/meow/static/css/main.f855e6bc.css.map",
+    "main.fb4d5882.js.map": "/meow/static/js/main.fb4d5882.js.map",
+    "453.833c1f9b.chunk.js.map": "/meow/static/js/453.833c1f9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.fb4d5882.js"
+  ]
+}
