@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 const axios = require('axios');
 
 // Replace with your API Gateway endpoint URL
-const API_ENDPOINT = 'https://<your-api-gateway-endpoint>/run';
+const API_ENDPOINT = 'https://6xsnuinz0h.execute-api.ap-south-1.amazonaws.com/default/CodeEditor/run';
 
 function App() {
   const [code, setCode] = useState('');
