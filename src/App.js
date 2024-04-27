@@ -10,7 +10,7 @@ function App() {
       code
     };
     try{
-      const {data}=await axios.post("https://6xsnuinz0h.execute-api.ap-south-1.amazonaws.com/default/CodeEditor/run",payload)
+      const {data}=await axios.post("https://6xsnuinz0h.execute-api.ap-south-1.amazonaws.com/default/CodeEditor",payload)
       setOutput(data.output);
     }
     catch(err)
